@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <h1>Calculator</h1>
+    <table cellspacing="20px" cellpadding="20px">
+        <tr>
+            <th colspan="4" ><input type="text" placeholder="calculate" disabled></th>
+        </tr>
+        <tr>
+            <th colspan="2" onclick="empty()">CE</th>
+            <th onclick="getvalue(event)">/</th>
+            <th onclick="getvalue(event)">*</th>
+        </tr>
+        <tr>
+            <th onclick="getvalue(event)">7</th>
+            <th onclick="getvalue(event)">8</th>
+            <th onclick="getvalue(event)">9</th>
+            <th onclick="getvalue(event)">-</th>
+        </tr>
+        <tr>
+            <th onclick="getvalue(event)">4</th>
+            <th onclick="getvalue(event)">5</th>
+            <th onclick="getvalue(event)">6</th>
+            <th onclick="getvalue(event)">+</th>
+        </tr>
+        <tr>
+            <th onclick="getvalue(event)">1</th>
+            <th onclick="getvalue(event)">2</th>
+            <th onclick="getvalue(event)">3</th>
+            <th rowspan="2" onclick="result()" class="equal">=</th>
+        </tr>
+        <tr>
+            <th onclick="getvalue(event)">.</th>
+            <th onclick="getvalue(event)">0</th>
+            <th onclick="getvalue(event)">%</th>
+        </tr>
+    </table>
+    <script src="./index.js"></script>
+</body>
+</html>
